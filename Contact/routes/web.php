@@ -25,6 +25,10 @@ Route::get('/test', function() {
     return view ('test');
 } );
 
+Route::get('/blog', function() {
+    return view ('blog');
+} );
+
 Route::post('/contactpost', [ContactController::class,'contact'])->name('contactpost');
 
 
